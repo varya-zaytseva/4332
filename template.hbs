@@ -1,0 +1,18 @@
+<div class='container'>
+  <h1>Изучаемые языки:</h1>
+  {{#each languages}}
+    <div class='card'>
+      {{#if this.modern}}
+        <p>
+          Я хочу изучить
+          {{this.name}}
+        </p>
+      {{else}}
+        <p>
+          Когда у меня будет время, я выучу
+          {{this.name}}
+        </p>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>
